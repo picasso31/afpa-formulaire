@@ -17,7 +17,7 @@ h1 {
 }
 
 fieldset {
-  width: 200px;
+  width: 250px;
   text-align: start;
   display: block;
   margin: auto;
@@ -25,7 +25,7 @@ fieldset {
   padding: 20px;
 }
 
-input {
-  display: flex;
-  justify-content: center;
+.boutton {
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

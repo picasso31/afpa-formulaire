@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" defer></script>
+    <script type="module" src="./js/script.js" defer></script>
     <title>formulaire-afpa</title>
 </head>
 <body>
@@ -25,49 +25,42 @@
     
      <fieldset>
          <legend>identité</legend>
-            <div class="identite">
-                <div class="radio">
-                <label for="mr"> Monsieur <input type="radio" id="mr" name="drone"> </label> 
-                 <label for="mme"> Madame <input type="radio" id="mme" name="drone"></label>
-                </div>
-                 <div class="prenom">
+    <div class="identite">
+        <div class="radio">
+             <label for="mr"> Monsieur <input type="radio" id="mr" name="sexe"> </label> 
+             <label for="mme"> Madame <input type="radio" id="mme" name="sexe"></label>
+        </div>
+        <div class="prenom">
                 <label  for="nom">nom : <input type="text" id="nom" ></label>
                 <label  for="prenom">prenom :<input type="text" id="prenom"> </label>
                 <label  for="mail">email : <input type="text" id="mail"> </label>
-                 </div>
-            </div>
+        </div>
+    </div>
      </fieldset>
         
 
 
 
  <fieldset>
-    </div>
         <legend>Adresse de Facturation</legend>
         <div class="adresse">
-            <label for="rue">Rue <input type="text" id="rue"></label>
-            <label for="ville"> ville <input type="text" id="ville"></label>
-            <label for="code-postal">Code postal<input type="text" id="code-postal"></label>
-        </div>
-        
-    </div>
+            <label > Rue :<input type="text" id="rue_facturation" ></label>
+            <label > ville :<input type="text" id="ville_facturation"></label>
+            <label > Code postal :<input type="text" id="code_postal_facturation"></label>
+        </div>   
  </fieldset>
 
- <fieldset>
-        </div>
+ <fieldset> 
         <legend>Adresse de Livraison </legend>
-        <div>
-            <label for="rue">Rue <input type="text" id="rue"></label>
-            <label for="ville"> ville <input type="text" id="ville"></label>
-            <label for="code-postal">Code postal<input type="text" id="code-postal"></label>
-        </div>
-
+        <div class="adresse">
+            <label > Rue <input type="text" id="rue_livraison"></label>
+            <label > ville <input type="text" id="ville_livraison"></label>
+            <label > Code postal<input type="text" id="code_postal_livraison"></label>
         </div>
  </fieldset>
 
   <div class="button">
-      <input class="boutton" type="button" value="valider" />
-
+      <input class="boutton" type="button" value="valider" id="myButton" />
   </div>
 
 
